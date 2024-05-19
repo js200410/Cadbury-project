@@ -1,29 +1,36 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import { Link } from 'react-router-dom';
+import gsap,{Power2} from 'gsap';
 
 const Navbar = () => {
-  return (
-    <div classNameNameNameName=' w-[85vw]  h-[10vh] absolute z-10 -translate-x-1/2  flex  left-1/2  items-center  justify-between '> 
+  useEffect(()=>{
+    gsap.from(".nav",{
+      y:"20%",
+      opacity:0,
+      ease:Power2.easeInOut,
+      duration:1,
+      
+    })
+    gsap.to(".nav",{
+      y:0,
+      opacity:1,    
+      stagger:1.5,
+      ease:Power2.easeInOut,
+      duration:1.5,
+      delay:0.2,
+    })
    
-    <div classNameNameNameName='flex   w-1/2 gap-10  items-center ml-[10vw]'>
-    <Link to="/"><img  classNameNameNameName= ' navbar  ' src='https://1000logos.net/wp-content/uploads/2022/08/Cadbury-Dairy-Milk-Logo-2003.png' alt='logo'/></Link>
-    <Link to="/OurProducts"> <h3 classNameNameNameName='navbar Lato text-zinc-100 font-bold w-full   '>
+  },[])
+  return (
+    <div className=' h-[10vh] absolute z-10 flex top-[3vh] '> 
+   
+    <div className='flex gap-[10vh]  items-center'>
+    <Link to="/"><img  className= '  navbar w-[30vw] nav' src='https://1000logos.net/wp-content/uploads/2022/08/Cadbury-Dairy-Milk-Logo-2003.png' alt='logo'/></Link>
+    <Link to="/OurProducts"> <h3 className='navbar nav Lato text-white font-bold text-[3vh]   w-[10vw] p-1 border-1 rounded-xl'>
     Our Products</h3></Link>
-    <Link to="/OurRecipes">  <h3 classNameNameNameName='navbar Lato text-zinc-100 font-bold w-full'>Our Recipes</h3></Link>
+    <Link to="/OurRecipes">  <h3 className='navbar nav Lato  text-white font-bold text-[3vh]  w-[10vw] p-1 border-1 rounded-xl '>Our Recipes</h3></Link>
+    <a><img className='w-[10vh] nav float-right ml-[40vh] border-1 rounded-xl' src="https://th.bing.com/th/id/R.9245cfdab5eb2e9396ade92dac935027?rik=KrU%2fI470yQqP6g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-jHg6dC7ruw0%2fTVb8jjMI4vI%2fAAAAAAAAJFY%2f1WrHtq2YU7U%2fs1600%2fCadbury_Logo26.jpg&ehk=G5JsMSC5wldMNe9uqNDcn1sux%2fMDWJYncDWHALP%2f4YU%3d&risl=&pid=ImgRaw&r=0" alt="" /></a>
     </div>
-
-    {/* <div classNameNameNameName='flex   w-1/2  ml-[30vw] items-center'>
-    <div classNameNameNameName='user flex gap-4 border-r-[.8px] border-zinc-700 pr-2'>
-        <img  classNameNameNameName= 'text-zinc-700 navbar' src='https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg'/>
-     <h3 classNameNameNameName='navbar Lato text-zinc-100 font-bold w-full   '>Sign In</h3>
-    </div>
-    <div classNameNameNameName=' flex items-center'>
-        <h4 classNameNameNameName="text-xl navbar text-zinc-200  pl-2">0</h4>
-        <img classNameNameNameName=" navbar h-[9vh] w-[7vw] "  src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"/>
-      </div>
-    </div> */}
-    
- 
  </div>
   )
 }

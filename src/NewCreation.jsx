@@ -49,9 +49,9 @@ const NewCreation = () => {
 
 
   return (
-    <div data-scroll data-scroll-speed="0.05" classNameNameNameName='overflow-x-hidden h-screen bg-cover bg-no-repeat bg-[url("https://i2-prod.dailystar.co.uk/incoming/article23661345.ece/ALTERNATES/s615/0_Untitled-2021-03-10T121435829.jpg")]'>
-        <h1 classNameNameNameName="bg text-[10vh] font-sans uppercase font-semibold text-purple-900 text-center mt-[4vh]  ">our new creation</h1>
- <div classNameNameNameName="scroller gap-10 flex-nowrap flex w-[250vw] items-center  p-10 ">
+    <div data-scroll data-scroll-speed="0.05" className='overflow-x-hidden h-screen bg-cover bg-no-repeat bg-[url("https://i2-prod.dailystar.co.uk/incoming/article23661345.ece/ALTERNATES/s615/0_Untitled-2021-03-10T121435829.jpg")]'>
+        <h1 className="bg text-[10vh] font-sans uppercase font-semibold text-purple-900 text-center mt-[4vh]  ">our new creation</h1>
+ <div className="scroller gap-10 flex-nowrap flex w-[250vw] items-center  p-10 ">
     {[
       {
   img:"https://images-tastehub.mdlzapps.cloud/images/f0f5a81a-af09-4a03-892e-0d4386ca0ada.png?fm=webp&q=80",
@@ -84,14 +84,14 @@ const NewCreation = () => {
 ].map((items,index)=>{
     return <div
      ref={(element) => (imgContainers.current[index] = element)}
-    classNameNameNameName="bg-purple-200 marquee  h-[60vh] border-1 rounded-xl bg overflow-hidden ">
-              <h1 classNameNameNameName="bg-yellow-600 w-[10vw]">{items.h }</h1>
+    className="bg-purple-200 marquee  h-[60vh] border-1 rounded-xl bg overflow-hidden ">
+              <h1 className="bg-yellow-600 w-[10vw]">{items.h }</h1>
               <img  
               onMouseEnter={() => toggleHover(index)}
               onMouseLeave={() => toggleHover(index)}
-              ref={(elem) => (images.current[index] = elem)} key={index} src={items.img} alt="" classNameNameNameName={`yImg mt-[10vh] w-[30vw] 
+              ref={(elem) => (images.current[index] = elem)} key={index} src={items.img} alt="" className={`yImg mt-[10vh] w-[30vw] 
               `}/>
-              <div  classNameNameNameName="bg-purple-900  shadow-purple-950 bg h-[50vh] w-[30vw] border-l-2 rounded-t-[50%]">
+              <div  className="bg-purple-900  shadow-purple-950 bg h-[50vh] w-[30vw] border-l-2 rounded-t-[50%]">
             
              </div>
              

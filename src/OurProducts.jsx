@@ -61,19 +61,19 @@ const OurProducts=()=> {
   return (
     <>
     <Navbar/>
-    <div classNameNameNameName="w-screen">
-      <div classNameNameNameName='w-screen h-[85vh] relative '>
-      <img classNameNameNameName=' w-full h-full object-cover' src='https://i.pinimg.com/564x/de/97/a8/de97a8a67a138833ea26d1217aa7e15a.jpg'/>
-      <div classNameNameNameName='z-9 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-screen '>
-      <h1 classNameNameNameName='text-[#dbb667] text-[10vh] uppercase whitespace-nowrap text-center title'>cadbury chocolate</h1>
-      <p classNameNameNameName='z-9 text-[4vh] py-8   text-center title '>Think Cadbury, think chocolate. Chocolate bars, blocks and bites - all different types of chocolate and chocolate flavours. So delicious, so moreish.</p>
+    <div className="w-screen">
+      <div className='w-screen h-[85vh] relative '>
+      <img className=' w-full h-full object-cover' src='https://i.pinimg.com/564x/de/97/a8/de97a8a67a138833ea26d1217aa7e15a.jpg'/>
+      <div className='z-9 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-screen '>
+      <h1 className='text-[#dbb667] text-[10vh] uppercase whitespace-nowrap text-center title'>cadbury chocolate</h1>
+      <p className='z-9 text-[4vh] py-8   text-center title '>Think Cadbury, think chocolate. Chocolate bars, blocks and bites - all different types of chocolate and chocolate flavours. So delicious, so moreish.</p>
       
       </div></div>
-      <div classNameNameNameName='w-screen flex justify-center py-10'>
-      <h1 classNameNameNameName='text-[#4b0983] uppercase text-[5vh] tilt-neon'>all Chocolate products</h1>
+      <div className='w-screen flex justify-center py-10'>
+      <h1 className='text-[#4b0983] uppercase text-[5vh] tilt-neon'>all Chocolate products</h1>
       </div>
       
-      <div classNameNameNameName="grid grid-cols-3 gap-x-[0.8vw] gap-y-[15vh] mx-[10%] max-w-screen pb-[10vh] ">
+      <div className="grid grid-cols-3 gap-x-[0.8vw] gap-y-[15vh] mx-[10%] max-w-screen pb-[10vh] ">
         {[
          {image:"https://images-tastehub.mdlzapps.cloud/images/e5c91e06-08f0-49b4-bad0-18193c27c141.png?fm=webp&q=80" ,
                para:"CADBURY CHOCOLATE BUTTONS SELECTION BOX 375G",
@@ -102,42 +102,42 @@ const OurProducts=()=> {
              },].map((item, index) => (
           <div
             key={index}
-            classNameNameNameName={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
+            className={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
               isHover[index] ? 'hovered' : ''
             }`}
             onMouseEnter={() => toggleHover(index)}
             onMouseLeave={() => toggleHover(index)}
             ref={(element) => (imgContainers.current[index] = element)}
           >
-            <div classNameNameNameName='absolute w-[22vw] h-[15vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl '></div>
-            <h5 classNameNameNameName="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
+            <div className='absolute w-[22vw] h-[15vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl '></div>
+            <h5 className="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
             <img
               key={index}
-              classNameNameNameName={`w-[18vw] h-[35vh] z-9 absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+              className={`w-[18vw] h-[35vh] z-9 absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 ${
                 isHover[index] ? 'hovered' : ''
               }`}
               ref={(elem) => (images.current[index] = elem)}
               src={item.image}
               alt="White Chocolate"
             />
-            <p classNameNameNameName="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
+            <p className="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
           </div>
         ))}
       </div>
     </div>
-    <div classNameNameNameName="w-screen">
-      <div classNameNameNameName='w-screen h-[85vh] relative '>
-      <img classNameNameNameName=' w-full h-full object-cover' src='https://i.pinimg.com/564x/de/97/a8/de97a8a67a138833ea26d1217aa7e15a.jpg'/>
-      <div classNameNameNameName='z-9 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-screen'>
-      <h1 classNameNameNameName='text-[#dbb667] text-[10vh] uppercase whitespace-nowrap text-center title'>cadbury milk <br/>chocolate</h1>
-      <p classNameNameNameName='z-9 text-[4vh] py-8  text-center title '>Our classNameNameNameic, Cadbury milk chocolate recipe always goes down a treat - milk chocolate bars, biscuits and chocolate bites. Anyone fancy a chunk of Cadbury Dairy Milk?</p>
+    <div className="w-screen">
+      <div className='w-screen h-[85vh] relative '>
+      <img className=' w-full h-full object-cover' src='https://i.pinimg.com/564x/de/97/a8/de97a8a67a138833ea26d1217aa7e15a.jpg'/>
+      <div className='z-9 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-screen'>
+      <h1 className='text-[#dbb667] text-[10vh] uppercase whitespace-nowrap text-center title'>cadbury milk <br/>chocolate</h1>
+      <p className='z-9 text-[4vh] py-8  text-center title '>Our classNameNameNameic, Cadbury milk chocolate recipe always goes down a treat - milk chocolate bars, biscuits and chocolate bites. Anyone fancy a chunk of Cadbury Dairy Milk?</p>
       
       </div></div>
-      <div classNameNameNameName='w-screen flex justify-center py-10'>
-      <h1 classNameNameNameName='text-[#4b0983] uppercase text-[5vh] tilt-neon'>all milk Chocolate products</h1>
+      <div className='w-screen flex justify-center py-10'>
+      <h1 className='text-[#4b0983] uppercase text-[5vh] tilt-neon'>all milk Chocolate products</h1>
       </div>
       
-      <div classNameNameNameName="grid grid-cols-3 gap-x-[0.8vw] gap-y-[15vh] mx-[10%] max-w-screen pb-[10vh]">
+      <div className="grid grid-cols-3 gap-x-[0.8vw] gap-y-[15vh] mx-[10%] max-w-screen pb-[10vh]">
         {[
          {image:"https://images-tastehub.mdlzapps.cloud/images/d666a851-6294-4346-952a-25b6ce861742.png?fm=webp&q=80" ,
                para:"CADBURY DAIRY MILK CHOCOLATE CHRISTMAS COINS MONEY TIN 230G",
@@ -164,42 +164,42 @@ const OurProducts=()=> {
              },].map((item,index) => (
               <div
               key={index}
-              classNameNameNameName={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
+              className={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
                 isHover[index] ? 'hovered' : ''
               }`}
               onMouseEnter={() => toggleHover(index)}
               onMouseLeave={() => toggleHover(index)}
               ref={(element) => (imgContainers.current[index] = element)}
             >
-              <div classNameNameNameName='absolute w-[22vw] h-[15vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl'></div>
-              <h5 classNameNameNameName="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
+              <div className='absolute w-[22vw] h-[15vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl'></div>
+              <h5 className="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
               <img
                 key={index}
-                classNameNameNameName={`w-[18vw] h-[35vh] z-9 absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+                className={`w-[18vw] h-[35vh] z-9 absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 ${
                   isHover[index] ? 'hovered' : ''
                 }`}
                 ref={(elem) => (images.current[index] = elem)}
                 src={item.image}
                 alt="White Chocolate"
               />
-              <p classNameNameNameName="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
+              <p className="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
             </div>
         ))}
       </div>
     </div>
-    <div classNameNameNameName="w-screen">
-      <div classNameNameNameName='w-screen h-[85vh] relative '>
-      <img classNameNameNameName=' w-full h-full object-cover' src='https://i.pinimg.com/564x/de/97/a8/de97a8a67a138833ea26d1217aa7e15a.jpg'/>
-      <div classNameNameNameName='z-9 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-screen '>
-      <h1 classNameNameNameName='text-[#dbb667] text-[10vh] uppercase whitespace-nowrap text-center title'>cadbury white <br/>chocolate</h1>
-      <p classNameNameNameName='z-9 text-[4vh] py-8   text-center title '>White chocolate bars, white chocolate buttons… however it comes, it’s the creamiest, dreamiest taste of the Cadbury white chocolate we all love.</p>
+    <div className="w-screen">
+      <div className='w-screen h-[85vh] relative '>
+      <img className=' w-full h-full object-cover' src='https://i.pinimg.com/564x/de/97/a8/de97a8a67a138833ea26d1217aa7e15a.jpg'/>
+      <div className='z-9 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-screen '>
+      <h1 className='text-[#dbb667] text-[10vh] uppercase whitespace-nowrap text-center title'>cadbury white <br/>chocolate</h1>
+      <p className='z-9 text-[4vh] py-8   text-center title '>White chocolate bars, white chocolate buttons… however it comes, it’s the creamiest, dreamiest taste of the Cadbury white chocolate we all love.</p>
       
       </div></div>
-      <div classNameNameNameName='w-screen flex justify-center py-10'>
-      <h1 classNameNameNameName='text-[#4b0983] uppercase text-[5vh] tilt-neon'>all white Chocolate products</h1>
+      <div className='w-screen flex justify-center py-10'>
+      <h1 className='text-[#4b0983] uppercase text-[5vh] tilt-neon'>all white Chocolate products</h1>
       </div>
       
-      <div classNameNameNameName="grid grid-cols-3 gap-x-[0.8vw] gap-y-[15vh] mx-[10%] max-w-screen pb-[10vh]">
+      <div className="grid grid-cols-3 gap-x-[0.8vw] gap-y-[15vh] mx-[10%] max-w-screen pb-[10vh]">
         {[
          {image:"https://images-tastehub.mdlzapps.cloud/images/b218226f-6e8d-4165-89a1-1f2e8fd71a08.png?fm=webp&q=80" ,
                para:"CADBURY CREME EGG 5 PACK MIXED CHOCOLATE BOX 200G",
@@ -228,25 +228,25 @@ const OurProducts=()=> {
              },].map((item,index) => (
           <div
             key={index}
-            classNameNameNameName={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
+            className={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
               isHover[index] ? 'hovered' : ''
             }`}
             onMouseEnter={() => toggleHover(index)}
             onMouseLeave={() => toggleHover(index)}
             ref={(element) => (imgContainers.current[index] = element)}
           >
-            <div classNameNameNameName='absolute w-[22vw] h-[15vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl'></div>
-            <h5 classNameNameNameName="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
+            <div className='absolute w-[22vw] h-[15vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl'></div>
+            <h5 className="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
             <img
               key={index}
-              classNameNameNameName={`w-[18vw] h-[35vh] z-9 absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+              className={`w-[18vw] h-[35vh] z-9 absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 ${
                 isHover[index] ? 'hovered' : ''
               }`}
               ref={(elem) => (images.current[index] = elem)}
               src={item.image}
               alt="White Chocolate"
             />
-            <p classNameNameNameName="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
+            <p className="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
           </div>
         ))}
       </div>
