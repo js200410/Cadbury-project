@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+swiper {
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    background: #B784B7;
+  }
+  *{
+ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+} 
+.bg{
+  box-shadow: purple 9px 6px 10px;
+}
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* .page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page1 img {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.5);  Adjust opacity as needed 
+    padding: 10px;
+  }*/
+  /*
+  .text {
+    color: #f1cd76;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .paragraph {
+    color: white;
+    font-size: 26px;
+  }
+  
+  .paragraph span {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .page2 {
+    height: 100vh;
+    /*background-color: rgb(234, 180, 172);
+    background-color: rgb(67, 67, 76);
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 100px;
+    color: #f8fbfd;
+  }
+  
+  #head {
+    text-align: center;
+    font-size: 100px;
+    height: 10vh;
+    color: #f8fbfd;
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  
+  .card {
+    width: 80px;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f1cd76;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .button {
+    color: #000;
+    background-color: #f1cd76;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff9c3f;
+  }
+  
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-content {
+    color: #f8fbfd;
+    text-align: center;
+  }
+  
+  .overlay-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .overlay-content a {
+    color: #f8fbfd;
+    background-color: #f1cd76;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .overlay-content a:hover {
+    background-color: #ff9c3f;
+  }
+   .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 350px;
+    transition: transform 0.5s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s ease;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    transition: bottom 0.5s ease;
+  }
+  
+  .overlay-content .button {
+    background-color: rgb(224, 112, 224);
+    width: 1px;
+    height: 1px;
+    color: rgb(48, 7, 7);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .overlay-content .button:hover {
+    background-color: purple;
+    width: 1px;
+    height: 1px;
+  }
+  
+  .image-container:hover .overlay {
+    height: 100%;
+  }
+  
+  .image-container:hover .overlay-content {
+    bottom: 0;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  } */ 
