@@ -5,19 +5,19 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 
 const CabduryWorld = () => {
   useEffect(()=>{
-   gsap.from(".title",{
+   gsap.from(".cadbury-world-title",{
       translateX:"100",
       scale:0
       , scrollTrigger:{
-        trigger:".title",
+        trigger:".cadbury-world-title",
         scrub:1,
         ease:Power2.easeInOut,
       }
    })
-   gsap.to(".title",{
+   gsap.to(".cadbury-world-title",{
     translateX:0,
     scale:1 , scrollTrigger:{
-      trigger:".title",
+      trigger:".cadbury-world-title",
       scrub:1,
       ease:Power2.easeInOut,
     }
@@ -64,7 +64,7 @@ const CabduryWorld = () => {
   <div>
    <div className="cont h-[70vh] mt-0 flex bg-purple-950">
       <div className='bg-purple-950 w-[50%]'>
-        <h1 className='title p-3 text-[8vh] mt-[10vh] text-yellow-600 '>{["NEW","CADBURY DAIRY" ,"MILK" ,"&MORE"].map((index,value)=>{
+        <h1 className='cadbury-world-title p-3 text-[8vh] mt-[10vh] text-yellow-600 '>{["NEW","CADBURY DAIRY" ,"MILK" ,"&MORE"].map((index,value)=>{
             return <span className=' font-extrabold font-sans h1 uppercase ml-[8vh] ' key={index}>{index}
             <br/>
             </span>
@@ -72,7 +72,7 @@ const CabduryWorld = () => {
       </div>
       <div className='w-[50%]'>
         <img data-scroll data-scroll-speed="-0.15" className=" thnku mb-[10vh]" src="https://www.cadburygiftsdirect.co.uk/media/wysiwyg/Multi_perso_DT_V2.png" alt="" />
-        <img data-scroll data-scroll-speed="-0.1"  cl assName="thnku" src="https://www.cadburygiftsdirect.co.uk/media/wysiwyg/CGD-Home-Perso-ani-LR_2.gif" alt="" />
+        <img data-scroll data-scroll-speed="-0.1"  className="thnku" src="https://www.cadburygiftsdirect.co.uk/media/wysiwyg/CGD-Home-Perso-ani-LR_2.gif" alt="" />
       </div>
       
    </div>

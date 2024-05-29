@@ -6,14 +6,13 @@ swiper {
     height: 100%;
   }
   body{
-    background: #B784B7;
+    background: s#B784B7;
   }
   *{
  
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Courgette", cursive;
   font-weight: 400;
   font-style: normal;
 } 
@@ -28,228 +27,368 @@ swiper {
     align-items: center;
   }
   
-  
-  /* .page {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .main{
+    font-family: "Courgette", cursive;
   }
-  
-  .page1 img {
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* background-color: rgba(0, 0, 0, 0.5);  Adjust opacity as needed 
-    padding: 10px;
-  }*/
-  /*
-  .text {
-    color: #f1cd76;
-    font-size: 70px;
-    text-align: center;
-    font-weight: 700;
-  }
-  
-  .paragraph {
-    color: white;
-    font-size: 26px;
-  }
-  
-  .paragraph span {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  
-  .page2 {
-    height: 100vh;
-    /*background-color: rgb(234, 180, 172);
-    background-color: rgb(67, 67, 76);
-  }
-  
-  .text {
-    text-align: center;
-    font-size: 100px;
-    color: #f8fbfd;
-  }
-  
-  #head {
+  #head{
     text-align: center;
     font-size: 100px;
     height: 10vh;
     color: #f8fbfd;
   }
-  
-  .wrapper {
+  .wrapper{
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
-  .container {
+  .container{
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
   }
-  
-  .card {
+
+  .card{
     width: 80px;
-    border: 1px solid #000;
-    padding: 20px;
-    margin: 20px;
-    background-color: #f1cd76;
-    color: #000;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0,8);
+    margin-top: 0;
+  }
+  .card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .card > .row> .icon{
+    background-color: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    cursor: pointer;
+    margin: 15px;
   }
-  
-  .button {
-    color: #000;
-    background-color: #f1cd76;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #ff9c3f;
-  }
-  
-  .row {
-    width: 100%;
+  .card > .row > .description{
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  
-  .description {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .image-container {
-    position: relative;
     overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
   }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
+  .description h4{
+    background-color: rgb(244, 20, 244);
+    color: #000;
     align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    width: 300px;
+  }
+  .description .button{
+    background-color: rgb(198, 95, 198);
+    color: #000;
   }
   
-  .overlay-content {
-    color: #f8fbfd;
-    text-align: center;
+  
+  input{
+    display: none;
+  }
+  input:checked + label{
+    width: 600px;
+  }
+  input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  .card[htmlFor="c1"]{
+    background-image: url('https://images-tastehub.mdlzapps.cloud/images/2e3da807-90b1-4944-8e73-c6fcbc674460.jpg?fm=webp&q=80&fm=webp&q=80');
+  }
+  .card[htmlFor="c2"]{
+    background-image: url('https://images-tastehub.mdlzapps.cloud/images/86cc4f6a-be48-43c1-8441-f504df95f3b6.jpg?fm=webp&q=80&fm=webp&q=80');
+  }
+  .card[htmlFor="c3"]{
+    background-image: url('https://images-tastehub.mdlzapps.cloud/images/050baa10-144e-41ba-9c41-2325c61e00f4.jpg?fm=webp&q=80&fm=webp&q=80');
+  }
+  .card[htmlFor="c4"]{
+    background-image: url('https://images-tastehub.mdlzapps.cloud/images/a100ec5a-491c-4c2f-b788-fdecf9759335.jpg?fm=webp&q=80&fm=webp&q=80');
+  }
+  .card[htmlFor="c5"]{
+    background-image: url('https://images-tastehub.mdlzapps.cloud/images/fc6de92b-cd9d-4942-b5aa-a6a3076ebd20.jpg?fm=webp&q=80&fm=webp&q=80');
   }
   
-  .overlay-content h2 {
-    margin-bottom: 10px;
+  .page3{
+    height: 110vh;
+    background-color: #223;
   }
-  
-  .overlay-content a {
-    color: #f8fbfd;
-    background-color: #f1cd76;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .overlay-content a:hover {
-    background-color: #ff9c3f;
-  }
-   .image-container {
-    position: relative;
-    overflow: hidden;
+  .image-row .image-container{
+    height: 100%;
+    width: 30%;
     border-radius: 20px;
     margin-right: 20px;
+   /* margin-top: 20px;*/
     padding-top: 50px;
+    /*background-color: #10b3f4;*/
+  }
+    /* Style for the container */
+    .image-container {
+      position: relative;
+      width: calc(33.3% - 20px); 
+      margin: 10px;
+      overflow: hidden;
+      display: inline-block;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: 350px;
+      transition: transform 0.5s ease;
+    }
+  
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: height 0.5s ease;
+    }
+    
+    .overlay-content {
+      position: absolute;
+      bottom: -50px; 
+      left: 0;
+      padding: 5px;
+      color: white;
+      font-weight: bold;
+      height: 10vh;
+      width: 100%;
+      text-align: center;
+      transition: bottom 0.5s ease;
+    }
+    
+    .overlay-content p{
+        margin-bottom:2vh;
+    }
+    .overlay-content .button {
+      background-color: rgb(224, 112, 224);
+      width: 1px;
+      height: 1px;
+      color: rgb(48, 7, 7);
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 5vh;
+    }
+   
+    .overlay-content .button:hover {
+      background-color: purple;
+      width: 1px;
+      height: 1px;
+    }
+    
+    .image-container:hover .overlay {
+      height: 92%;
+    }
+  
+    /* Display overlay when hovered */
+    .image-container:hover .overlay-content {
+      bottom: 50px;
+    }
+  
+    /* Scale effect for the image */
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+    .container {
+      white-space: nowrap; /* Prevent text from wrapping */
   }
   
-  .image-container img {
-    width: 100%;
-    height: 350px;
-    transition: transform 0.5s ease;
+  .text {
+      display: inline-block; /* Display elements in one line */
+      margin-right: 10px; /* Optional margin between text elements */
+      align-items: center;
+      justify-content: center;
+      padding-left: 50px;
   }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: height 0.5s ease;
+  .text .button img{
+    height: 50px;
+    width: 55px;
+    align-items: center;
+   margin-top: 10px;
   }
-  
-  .overlay-content {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    width: 100%;
+  .text h4{
+    font-size: 50px;
     text-align: center;
-    transition: bottom 0.5s ease;
+    padding-left:460px;
+    color: purple0oop[];
   }
-  
-  .overlay-content .button {
-    background-color: rgb(224, 112, 224);
-    width: 1px;
-    height: 1px;
-    color: rgb(48, 7, 7);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  .swiper-slide{
+    text-shadow: brown 30px 5px 10px;
   }
-  
-  .overlay-content .button:hover {
-    background-color: purple;
-    width: 1px;
-    height: 1px;
+  @media screen and (max-width:600px){
+    body{
+      overflow-y: visible;
+    }
+    .navbarCont{
+      display: flex;
+      gap:1rem;
+      justify-content: space-between;
+    }
+    .navLogo{
+      width:5rem
+    }
+    .navContent{
+      font-size:10px;
+      margin-left:1rem;
+      margin-right:3rem
+    }
+    .cup{
+      width:2rem;
+      margin-left: 1rem;
+    }
+    .mySwiper{
+      height:100vh
+    }
+    .swiper-slide1 {
+      background-size:cover;
+      background-position: center;
+      color: rgba(45, 5, 5, 0.329);
+      font-size:0.5
+
+    }
+    .new-creation-container{
+      height:150vh;
+    }
+    .new-creation{
+      width:700vw
+    }
+    .new-creation-img-cont{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      place-items: center;
+    }
+    .yImg{
+    width: fit-content;
+    }
+    .round{
+      width: 100%;
+    }
+    .cadbury-world-title{
+      font-size: 4vh;
+    }
+    .footer-links{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .our-products{
+      display: flex;
+      flex-wrap:wrap ;
+    }
+    .our-products-container{
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .img-container,.img-round, .our-product-img{
+      width: 100%;
+    }
+    .img-round{
+      height:50%
+    }
+  /* index.css */
+
+/* Add this to make the text responsive */
+@media screen and (max-width: 600px) {
+  .text-overlay{
+    position:absolute;
+    top:60%;
   }
-  
-  .image-container:hover .overlay {
-    height: 100%;
+  .paragraph{
+    width:90vw;
   }
-  
-  .image-container:hover .overlay-content {
-    bottom: 0;
+  .text-overlay-text{
+    font-size: 10vh;
   }
-  
-  .image-container:hover img {
-    transform: scale(1.1);
-  } */ 
+  .radio-text{
+    font-size:5vh;
+  }
+  .paragraph {
+    font-size: 4vw;
+  }
+  .description h4 {
+    font-size: 3vw;
+  }
+  .description .button {
+    font-size: 2vw;
+  }
+  .overlay h2 {
+    font-size: 2vw;
+  }
+  .overlay p {
+    font-size: 2vw;
+  }
+  .overlay .button {
+    font-size: 1vw;
+  }
+
+}
+
+/* Add this to make the images responsive */
+
+
+/* Add this to make the card container responsive */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left:-2vh;
+  margin-top:-20vh
+}
+
+/* Add this to make the card responsive */
+.card {
+  width:50%;
+  max-width: 600px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.page3{
+  height:150vh;
+  overflow-x :hidden;
+}
+.image-row{
+  display: grid;
+  width:250vw;
+}
+.new-creation-img-cont h1{
+  font-size: 3vh;
+  width:80%;
+  color:white
+}
+.whitespace-nowrap{
+font-size:5vh
+}
+
+  }

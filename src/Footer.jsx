@@ -14,7 +14,7 @@ const Footer = () => {
               <img src="https://images.ctfassets.net/pmzhtobns06n/57FipyJjLjAlnu0s8PUzdw/18e9b38e9f00388131efa272442ff21f/Social_Tiktok.svg?q=80" alt="" />
             </div>
       </div>
-      <div className='font-sans flex justify-between '>
+      <div className='footer-links font-sans flex justify-between '>
         {["© 2024 Mondelez United Kingdom","TERMS OF USE","PRIVACY NOTICE","COOKIE NOTICE","ACCESSIBILITY","T&Cs",
 "CONTACT US"].map((index,value)=>{
     return <a key={index} href="" className="font-sans mt-[10vh] font-semibold">{index}</a>

@@ -35,7 +35,7 @@ function Home() {
   },[])
 
   return (
-    <div>
+    <div className='home'>
       <Navbar/>
      <Slider/>
      <div className="bg-no-repeat  justify-center place-content-center bg-cover bg- w-full bg-[url('https://th.bing.com/th/id/OIP.joal2x99E0IEJkN7fIL-vwHaEi?w=720&h=441&rs=1&pid=ImgDetMain')]">
