@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Home from "./Home";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import OurProducts from "./OurProducts";
 import OurRecipes from "./OurRecipes";
