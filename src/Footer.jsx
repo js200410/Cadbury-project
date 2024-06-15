@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <div  className='bg-purple-900 h-[40vh]'>
         <img className=" float-right h-[40vh]" src="https://images.ctfassets.net/pmzhtobns06n/FylNgIq5k8uYLgdPsRNC3/2d5134c6f611132106fcd3229a9f416e/Cadbury_MilkPourMaster.png?fm=webp&q=80&fm=webp&q=80" alt="" />
       </div>
-      <div className='border-b-2 border-purple-900 h-[30vh] flex justify-between items-center p-4'>
+      <div className='footer-icons border-b-2 border-purple-900 h-[30vh] flex justify-between items-center p-4'>
             <div><img src="https://images.ctfassets.net/pmzhtobns06n/2kEDmwTjEX4J1azHCiCS0a/ee9d70f71b52352d684fd59240ce3113/Mondelez_Logo_White.svg?q=80" alt="" /></div>
             <div className='flex h-[6vh] gap-[3vh]'>
               <img src="https://images.ctfassets.net/pmzhtobns06n/JZ2DrEB2dzVa54lm84S9J/09b5d6efef8bb4ebd95c2bef08f5cdb2/Social_Facebook.svg?q=80" alt="" />

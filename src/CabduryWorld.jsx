@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect } from 'react'
 import gsap,{Power2}  from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-
+import './index.css'
 
 const CabduryWorld = () => {
   useEffect(()=>{
@@ -63,7 +63,7 @@ const CabduryWorld = () => {
   return (
   <div>
    <div className="cont h-[70vh] mt-0 flex bg-purple-950">
-      <div className='bg-purple-950 w-[50%]'>
+      <div className='bg-purple-950 cadbury-world'>
         <h1 className='cadbury-world-title p-3 text-[8vh] mt-[10vh] text-yellow-600 '>{["NEW","CADBURY DAIRY" ,"MILK" ,"&MORE"].map((index,value)=>{
             return <span className=' font-extrabold font-sans h1 uppercase ml-[8vh] ' key={index}>{index}
             <br/>
