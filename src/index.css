@@ -212,6 +212,7 @@ swiper {
       cursor: pointer;
       transition: background-color 0.3s ease;
       margin-top: 5vh;
+      
     }
    
     .overlay-content .button:hover {
@@ -219,9 +220,13 @@ swiper {
       width: 1px;
       height: 1px;
     }
-    
     .image-container:hover .overlay {
       height: 92%;
+    }
+    .crunchiee{
+      font-family: "Architects Daughter", cursive;
+      font-weight: 900;
+      font-style: normal;
     }
   
     /* Display overlay when hovered */

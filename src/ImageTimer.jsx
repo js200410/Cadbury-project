@@ -13,7 +13,7 @@ const ImageTimer = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);  //images.length returns the first index after completion of displaying of all indexes 
     }, 1000); // Change image every 3 seconds
 
     return () => clearInterval(interval); // Clean up the interval on component unmount
@@ -21,7 +21,7 @@ const ImageTimer = () => {
 
   return (
     <div className="img-changer img w-[26vw] -rotate-12">
-      <img src={images[currentIndex]} alt="Slider" classname=" w-[40vw] "/>
+      <img src={images[currentIndex]} alt="Slider" className=" w-[40vw] "/>
     </div>
   );
 };
