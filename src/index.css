@@ -9,7 +9,6 @@ swiper {
     background: s#B784B7;
   }
   *{
- 
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -25,6 +24,10 @@ swiper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
   }
   
   .main{
@@ -42,6 +45,12 @@ swiper {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .navbar{
+    font-family: "Merienda", cursive;
+      font-optical-sizing: auto;
+      font-weight:800;
+      font-style: normal;
   }
   .container{
     height: 400px;
@@ -90,6 +99,12 @@ swiper {
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
+  }
+  .swiper-slide-div {
+      font-family: "Merienda", cursive;
+      font-optical-sizing: auto;
+      font-weight:800;
+      font-style: normal;
   }
   .description h4{
     background-color: rgb(244, 20, 244);
@@ -241,9 +256,7 @@ swiper {
     padding-left:460px;
     color: purple0oop[];
   }
-  .swiper-slide{
-    text-shadow: brown 30px 5px 10px;
-  }
+
   @media screen and (max-width:600px){
     body{
       overflow-y: visible;
@@ -266,13 +279,17 @@ swiper {
       margin-left: 1rem;
     }
     .mySwiper{
-      height:100vh
+      height:100vh;
     }
     .swiper-slide1 {
       background-size:cover;
       background-position: center;
       color: rgba(45, 5, 5, 0.329);
-      font-size:0.5
+      font-size:0.5;
+      font-family: "Merienda", cursive;
+      font-optical-sizing: auto;
+      font-weight:800;
+      font-style: normal;
 
     }
     .new-creation-container{

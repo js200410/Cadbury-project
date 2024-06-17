@@ -26,11 +26,12 @@ const Navbar = () => {
     <div className=' h-[10vh] navbar absolute z-10 flex top-[3vh] '> 
    
     <div className='navbarCont flex gap-[10vh] items-center'>
-    <Link to="/"><img  className='w-[30vw] navLogo nav' src='https://1000logos.net/wp-content/uploads/2022/08/Cadbury-Dairy-Milk-Logo-2003.png' alt='logo'/></Link>
+    <Link to="/">
+    <img  className='w-[20vw] navLogo nav' src='https://th.bing.com/th/id/R.025796500d23a9f3eafb9f0566d8b224?rik=tokLRyhFevJcOw&riu=http%3a%2f%2fwww.techsys.co.za%2fImageLibrary%2fprojects%2fcampaign-banner%2fCadbury_Logo.png&ehk=0BchF5GubvbfebEHNE4pZP7viObgXduEICPcnEftiZY%3d&risl=&pid=ImgRaw&r=0' alt='logo'/></Link>
     <Link to="/OurProducts"> <h3 className=' navContent nav Lato text-white font-bold text-[3vh]   w-[10vw] p-1 border-1 rounded-xl'>
     Our Products</h3></Link>
     <Link to="/OurRecipes">  <h3 className='navContent nav Lato  text-white font-bold text-[3vh]  w-[10vw] p-1 border-1 rounded-xl '>Our Recipes</h3></Link>
-    <a><img className='w-[10vh] cup  ml-[40vh] border-1 rounded-xl' src="https://th.bing.com/th/id/R.9245cfdab5eb2e9396ade92dac935027?rik=KrU%2fI470yQqP6g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-jHg6dC7ruw0%2fTVb8jjMI4vI%2fAAAAAAAAJFY%2f1WrHtq2YU7U%2fs1600%2fCadbury_Logo26.jpg&ehk=G5JsMSC5wldMNe9uqNDcn1sux%2fMDWJYncDWHALP%2f4YU%3d&risl=&pid=ImgRaw&r=0" alt="" /></a>
+    <a><img className='w-[10vh] cup  ml-[40vh] border-1 rounded-xl' src="https://toppng.com/public/uploads/thumbnail/cadbury-dairy-milk-choco-snack-cadbury-11563134298xobbdagqr8.png" alt="" /></a>
     </div>
  </div>
   )
