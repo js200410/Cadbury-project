@@ -407,6 +407,9 @@ swiper {
 
 /* Add this to make the text responsive */
 @media screen and (max-width: 600px) {
+  .home{
+    overflow-x:hidden ;
+  }
   .text-overlay{
     position:absolute;
     top:60%;
