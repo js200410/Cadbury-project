@@ -29,7 +29,62 @@ swiper {
     font-weight:600;
     font-style: normal;
   }
+  .products-desc{
+    padding : 25vh 20vw
+  }
   
+
+.Choices-swiper {
+  width: 90%;
+  padding:1vh 2vw
+}
+.choices-swiper-div h1{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+
+}
+
+.choices-swiper-slide {
+  font-size: 18px;
+  display: flex;
+  border-radius: 10px;
+
+}
+.choices-swiper-slide  p{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  .cadbury-details h2{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color:gold;
+    font-size:3vw
+  }
+  .cadbury-details h1,p{
+    font-weight:4vw;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .cadbury-details h1{
+    color:rgb(67, 6, 89);
+    font-size:2vw;
+  font-weight:900
+  }
   .main{
     font-family: "Courgette", cursive;
   }
@@ -114,10 +169,21 @@ swiper {
     font-weight: 900;
     width: 300px;
   }
-  .description .button{
+  button{
+    padding:1vh 1vw;
+    border-radius:25px;
+    width:10vw;
+    background-color:rgb(95, 7, 131);
+    color:gold;
+    font-weight:700;
+    font-size:1vw
+  }
+  .description .button {
     background-color: rgb(198, 95, 198);
     color: #000;
+
   }
+
   
   
   input{
@@ -202,7 +268,7 @@ swiper {
     .overlay-content p{
         margin-bottom:2vh;
     }
-    .overlay-content .button {
+    .overlay-content .button{
       background-color: rgb(224, 112, 224);
       width: 1px;
       height: 1px;
@@ -426,5 +492,61 @@ font-size:5vh
 .cont .cadbury-world{
   width:100vw;
 }
+.products-desc{
+  width : 100%;
+}
+.Product-cadbury{
+  width:100%;
+  display: flex;
+  gap:30vw;
+  flex-wrap: wrap
+}
+.explore-div{
+width:100%;
+display: flex;
+flex-wrap:wrap;
+gap:50vw
 
-  }
+}
+.cadbury-img{
+  height:50vh;
+}
+.cadbury-img img{
+ width: 80vw;
+}
+.choices-img-changer{
+  margin-top: -50vh;
+  width:100vw;
+  height:40vh
+
+}
+.Product-cadbury .cadbury-details h1{
+  font-size:5vw
+}
+.Product-cadbury .cadbury-details h2{
+  font-size:10vw
+}
+.Product-cadbury .cadbury-details button{
+  width:30vw;
+  height:5vh;
+  padding:none;
+  font-size:3vw
+
+}
+.choices-img-changer img{
+  width:100%;
+}
+.choices-img-changer h1{
+  font-size:4vw;
+  width:100%;
+}
+.choices-swiper-slide img{
+  width:30;
+  font-size:2vw;
+}
+.choices-swiper-slide button{
+  width:15vw;
+  font-size:2vw;
+}
+}
+  

@@ -62,7 +62,7 @@ const CabduryWorld = () => {
   })
   return (
   <div>
-   <div className="cont h-[70vh] mt-0 flex bg-purple-950">
+   {/* <div className="cont h-[70vh] mt-0 flex bg-purple-950">
       <div className='bg-purple-950 cadbury-world'>
         <h1 className='cadbury-world-title p-3 text-[8vh] mt-[10vh] text-yellow-600 '>{["NEW","CADBURY DAIRY" ,"MILK" ,"&MORE"].map((index,value)=>{
             return <span className=' font-extrabold font-sans h1 uppercase ml-[8vh] ' key={index}>{index}
@@ -75,7 +75,7 @@ const CabduryWorld = () => {
         <img data-scroll data-scroll-speed="-0.1"  className="thnku" src="https://www.cadburygiftsdirect.co.uk/media/wysiwyg/CGD-Home-Perso-ani-LR_2.gif" alt="" />
       </div>
       
-   </div>
+   </div> */}
       <div   className='h-[70vh] div bg-white flex gap-[2%] justify-center items-center overflow-hidden'> {["https://images.ctfassets.net/pmzhtobns06n/3ONtvIDWHyo8PShhOTZ4jB/f0bdb7c7f76bb94f7bdcb6a713dd767a/_Brandlogos_CDM.jpg?fm=webp&q=80",
         "https://images.ctfassets.net/pmzhtobns06n/g49BVpbGtQ4YYIlSm9iv8/eccb16148eeb1477dca2191290ae7d29/_Brandlogos_Twirl.jpg?fm=webp&q=80",
         "https://images.ctfassets.net/pmzhtobns06n/3xVsx15S4GgB2Hz4MrA9t4/b5af8a86fe29d664d4fbb7f31ab6f5c7/_Brandlogos_Wispa.jpg?fm=webp&q=80",

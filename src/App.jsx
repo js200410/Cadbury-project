@@ -3,6 +3,7 @@ import Home from "./Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import OurProducts from "./OurProducts";
 import OurRecipes from "./OurRecipes";
+import Choices from "./Choices";
 
 const App = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const App = () => {
   }, []);
 
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path="/" Component={Home} />
@@ -20,6 +22,7 @@ const App = () => {
         <Route path="/OurRecipes" Component={OurRecipes} />
       </Routes>
     </BrowserRouter>
+    </>
   );
 };
 

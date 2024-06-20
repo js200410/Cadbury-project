@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import gsap, { Power2 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./index.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -91,6 +92,48 @@ const Crunchie= () => {
 
 
 const Slider = () => {
+  useEffect(()=>{
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from(".breakText",{
+      y:"100%",
+      stagger:0.5,
+      opacity:0,
+      scale:0,
+      duration:0.8,
+     
+      scrollTrigger:{
+        trigger:".breakTextParent",
+        scrub:0.5,
+        ease:Power2.easeInOut,
+     
+        scroller:"body",
+        start:"top bottom",
+        
+        toggleActions: 'play none none reverse',
+      }
+      
+     })
+     gsap.to(".breakText",{
+      y:"0",
+      
+      opacity:1,
+      scale:1,
+      stagger:0.05,
+      scrollTrigger:{
+        trigger:".breakTextParent",
+        scrub:0.5,
+        ease:Power2.easeInOut,
+  
+        scroller:"body",
+        start:"top bottom",
+        
+     
+      }
+    
+  
+     })
+  })
+  
   useGSAP(() => {
     gsap.from(".title", {
       y: "20%",
@@ -148,9 +191,15 @@ const Slider = () => {
         <SwiperSlide>
         <div className="swiper-slide-div flex w-full h-full">
             <div className="home-img  w-[50%] bg-yellow-300 font-[900]  flex flex-col justify-center items-center">
-              <h1 className="text-purple-900 text-[3vw] title">Share The Joy</h1>
-              <h1 className="text-purple-900 text-[3vw] title">With Family and </h1>
-              <h1 className="text-purple-900 text-[3vw] title">Friends With Easter eggs</h1>
+              <h1 className="text-purple-900 flex z-[1] text-[3vw] title breakTextParent">{"Share-The-Joy".split("").map((value,index)=>{
+                return <span className="breakText font-[700]" key={index}>{value}</span>
+              })}</h1>
+              <h1 className="text-purple-900 flex z-[1] text-[3vw] title breakTextParent">{"With-Family-and".split("").map((value,index)=>{
+                return <span className="breakText font-[700]" key={index}>{value}</span>
+              })} </h1>
+              <h1 className="text-purple-900 flex z-[1] text-[3vw] title breakTextParent">{"Friends-With-Easter-eggs".split("").map((value,index)=>{
+                return <span className="breakText font-[700]" key={index}>{value}</span>
+              })}</h1>
             </div>
             <div className="home-img-2 h-full w-[50%] bg-yellow-100 flex items-center justify-center">
               <EggImageTimer/>
@@ -159,10 +208,16 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide >
           <div className="swiper-slide-div flex w-full h-full">
-            <div className="home-img  w-[60%]   bg-yellow-900  font-[900] capitalize flex flex-col justify-center items-center">
-              <h1 className="text-yellow-600 text-[4vw] title">bournville </h1>
-              <h1 className="text-yellow-600 text-[4vw] title"> dark chocolates </h1>
-              <h1 className="text-yellow-600 text-[4vw] title">the king's coronation</h1>
+            <div className="home-img  w-[60%]   bg-yellow-900  font-[900]  flex flex-col justify-center items-center">
+              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] title">{"Bournville".split("").map((value,index)=>{
+                return <span className="breakText" key={index}>{value}</span>
+              })} </h1>
+              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] title">{" Dark-Chocolates".split("").map((value,index)=>{
+                return <span className="breakText" key={index}>{value}</span>
+              })} </h1>
+              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] title">{"The-King's-Coronation".split("").map((value,index)=>{
+                return <span className="breakText" key={index}>{value}</span>
+              })}</h1>
             </div>
             <div className="home-img-2 h-full w-[50%] flex bg-[url('https://cdn.pixabay.com/photo/2022/03/03/15/40/coffee-7045578_1280.png')]  items-center justify-center">
               <Bourneville/>
