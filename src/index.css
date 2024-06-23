@@ -513,7 +513,7 @@ gap:50vw
 .choices-img-changer{
   margin-top: -50vh;
   width:100vw;
-  height:40vh
+  height:30vh
 
 }
 .Product-cadbury .cadbury-details h1{
@@ -529,6 +529,9 @@ gap:50vw
   font-size:3vw
 
 }
+.choices-swiper-div{
+  height:70vh
+}
 .choices-img-changer img{
   width:100%;
 }
@@ -537,7 +540,7 @@ gap:50vw
   width:100%;
 }
 .choices-swiper-slide img{
-  width:30;
+  width:35vw;
   font-size:2vw;
 }
 .choices-swiper-slide button{
@@ -545,7 +548,8 @@ gap:50vw
   font-size:2vw;
 }
 .cards{
-  height:15vh
+  height:10vh;
+
 }
 .cards-parent{
   height:50vh
@@ -558,6 +562,7 @@ gap:50vw
 .moments div{
   width:80%;
   margin-top: 10vh;
+  height:60vh
 
 }
 .page1 .paragraph{
@@ -565,8 +570,8 @@ gap:50vw
 }
 #page2{
     padding:10vh 10vw;
-    height:220vh;
-    font-size:1vw
+    height:200vh;
+    font-size:1vw;
 }
 #page2 h2{
   font-size: 10vw;
@@ -588,6 +593,9 @@ gap:50vw
   font-size:20px
 
 }
+#page3{
+  height:240vh
+}
 .image-row{
   width:100%;
   display: flex;
@@ -608,8 +616,7 @@ gap:50vw
   object-fit: cover;
 }
 .image-container img{
-  height:25vh;
-  width:60vw;
+  height:22vh;
   
 }
 .img-container{
@@ -623,6 +630,16 @@ gap:50vw
 .overlay-content .button{
   font-size:10px;
 
+}
+.page1 img{
+  height:80vh
+}
+.text-overlay .text{
+  font-size: 14vw;
+  margin-top: -35vh;
+}
+.text-overlay .paragraph{
+  font-size: 3vw;
 }
 }
   
