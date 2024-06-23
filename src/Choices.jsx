@@ -17,6 +17,7 @@ import './index.css';
 
 // import required modules
 import { Autoplay,Pagination, Navigation } from 'swiper/modules';
+import VideoHover from './VideoHover';
 const title=['Ice-Cream','Hot-Chocolate','Chocolate','Biscuit']
 const ChoicesImg = [
     'https://www.sparscotland.co.uk/images/products/brandbank/b8a9a87f-a5cc-41fa-ac49-b629fd5cd538.png',
@@ -75,52 +76,39 @@ const ChoicesImg = [
     },
   ]
     const ChoicesTimer = () => {
+      gsap.registerPlugin(ScrollTrigger)
       
     const [currentIndex, setCurrentIndex] = useState(0);
-    
-    useEffect(()=>{
-      gsap.registerPlugin(ScrollTrigger)
+     
+     
+    useEffect(() => {
       gsap.from(".breakText",{
-        y:"200%",
-        stagger:0.5,
-        opacity:0,
-        scale:0,
-        duration:3,
-       
+        translateY:200,
+        stagger:.5,
+        duration:.8,
+
+       opacity:0,
         scrollTrigger:{
-          trigger:".breakTextParent",
-          scrub:0.5,
-          ease:Power2.easeInOut,
-       
+          trigger:".breakText",
           scroller:"body",
-          start:"top bottom",
-          
-          toggleActions: 'play none none reverse',
+          start:"top 8%",
+          scrub:.1,
         }
         
        })
        gsap.to(".breakText",{
-        y:"0",
-        
+        translateY:0,
+        duration:8,
         opacity:1,
-        scale:1,
-        stagger:0.05,
+        stagger:.5,
         scrollTrigger:{
-          trigger:".breakTextParent",
-          scrub:0.5,
-          ease:Power2.easeInOut,
-    
+          trigger:".breakText",
           scroller:"body",
-
-          
+          scrub:.1,   
        
         }
-      
-    
        })
-    },)
     
-    useEffect(() => {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % ChoicesImg.length);  //images.length returns the first index after completion of displaying of all indexes 
       }, 2000); // Change image every 3 seconds
@@ -169,12 +157,12 @@ export default function Choices() {
     <>
     <div className='flex flex-col justify-center '>
     <div className='w-full uppercase explore-div h-[80vh] flex justify-center items-center gap-[5vw]   text-yellow-500 p-20'>
-        <div>
-        <h1 className='text-[4.5vw]  breakTextParent tracking-wide uppercase  z-[1]  flex'> {"explore-our-cadbury".split("").map((value,index)=>{
-          return <span className='breakText font-[700]' key={index}>{value}</span>
+        <div >
+        <h1 className='text-[4.5vw] text-yellow-900 breakTextParent tracking-wide uppercase z-[1]'> {"explore our cadbury".split("").map((value,index)=>{
+          return <span className='breakText font-[700] z-[1]' key={index}>{value}</span>
         })}</h1>
-        <h1 className='text-[4.5vw] font-[700] tracking-wide uppercase  z-[1]  flex'> {"range".split("").map((value,index)=>{
-          return <span className='breakText font-[700]' key={index}>{value}</span>
+        <h1 className='text-[4.5vw] font-[700] tracking-wide text-yellow-900 uppercase z-[1]'> {"range".split("").map((value,index)=>{
+          return <span className='breakText font-[700] z-[1]' key={index}>{value}</span>
         })}</h1>
         <img  width="70vw" src="https://images.ctfassets.net/pmzhtobns06n/2wC68NLrrsMn6Ze5WPiqvr/72a18a88506aaccbdb2041d753871e7c/Hazelnut.png?fm=webp&q=80" alt="" />
         <p className='text-purple-900'>Discover all the products and flavours you love, from chocolate blocks and bars, <br/>biscuits for your afternoon tea and boxes to gift.</p>
@@ -186,8 +174,8 @@ export default function Choices() {
     <div className=' choices-swiper-div  h-[120vh] flex justify-center flex-col bg-purple-900'>
       <div className='flex choices-div justify-center items-center'>
         <img data-scroll data-scroll-speed="-.4"  src="https://images.ctfassets.net/pmzhtobns06n/2wC68NLrrsMn6Ze5WPiqvr/72a18a88506aaccbdb2041d753871e7c/Hazelnut.png?fm=webp&q=80" className='w-[15vw]'  alt="" />
-      <h1 className='text-yellow-600 text-[5vw] breakTextParent flex z-[1] font-[700] text-center'>{"Drag-to-Explore".split("").map((value,index)=>{
-        return <span className='breakText font-[700]' key={index}>{value}</span>
+      <h1 className='text-yellow-600 text-[3vw] flex font-[700] text-center'>{"Drag to Explore".split("_").map((value,index)=>{
+        return <span className=' text-yellow-600 font-[700]' key={index}>{value}</span>
       })
     }</h1>
       <img data-scroll data-scroll-speed="-.2" src="https://images.ctfassets.net/pmzhtobns06n/11Y4kZLo4aRblqfQIM3NhO/6cdd48230b6aee544cdb3aba06008c58/Group_2.png?fm=webp&q=80" className='w-[15vw]' alt="" />
@@ -231,6 +219,16 @@ export default function Choices() {
         ))}
       </Swiper>
       </div>
+      <div className='z-[2] bg-[url("https://cdn.pixabay.com/photo/2017/06/20/17/15/wall-2423815_1280.jpg")] bg-no-repeat bg-cover'>
+      <img src="https://images.ctfassets.net/pmzhtobns06n/2ofIZQqpde9ZNB9CoOccUj/b655ad9d55d8adeb455c9f70db380961/Cameos.png?fm=webp&q=80" alt="" />
+      <h1 className='moments-text text-center text-purple-900 font-bold text-[4vw]' >Cabdury </h1>
+      <h1 className='moments-text text-center text-purple-900 font-bold text-[4vw]' >sharing happiness</h1>
+      <h1 className='moments-text text-center text-purple-900 font-bold text-[4vw]' >& creating moments</h1>
+      <img src="https://images.ctfassets.net/pmzhtobns06n/11Y4kZLo4aRblqfQIM3NhO/6cdd48230b6aee544cdb3aba06008c58/Group_2.png?fm=webp&q=80" className='w-[10vw] float-right alt="" ' />
+        <VideoHover/>
+      <img data-scroll data-scroll-speed='-.4' className='absolute bottom-[10%] w-[10vw]' src="https://images.ctfassets.net/pmzhtobns06n/11Y4kZLo4aRblqfQIM3NhO/6cdd48230b6aee544cdb3aba06008c58/Group_2.png?fm=webp&q=80" alt="" />
+      </div>
+         
       </div>
     </>
   );

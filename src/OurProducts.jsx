@@ -5,6 +5,7 @@ import MilkChoco from './MilkChoco'
 import WhiteChoco from './WhiteChoco'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import './index.css'
 
 const OurProducts = () => {
   return (
@@ -15,6 +16,7 @@ const OurProducts = () => {
       <MilkChoco/>
       <WhiteChoco/>
       <Footer/>
+      
     </div>
   )
 }

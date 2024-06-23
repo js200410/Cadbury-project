@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
       <div className='footer-icons border-b-2 border-purple-900 h-[30vh] flex justify-between items-center p-4'>
             <div><img src="https://images.ctfassets.net/pmzhtobns06n/2kEDmwTjEX4J1azHCiCS0a/ee9d70f71b52352d684fd59240ce3113/Mondelez_Logo_White.svg?q=80" alt="" /></div>
-            <div className='flex h-[6vh] gap-[3vh]'>
+            <div className='footer-image flex h-[6vh] gap-[3vh]'>
               <img src="https://images.ctfassets.net/pmzhtobns06n/JZ2DrEB2dzVa54lm84S9J/09b5d6efef8bb4ebd95c2bef08f5cdb2/Social_Facebook.svg?q=80" alt="" />
               <img src="https://images.ctfassets.net/pmzhtobns06n/5GAnl5vMpeeMZdhWqvbljQ/2e17077ee5f7d4cf39518eabb7eb48b3/Social_Instagram.svg?q=80" alt="" />
               <img src="https://images.ctfassets.net/pmzhtobns06n/57FipyJjLjAlnu0s8PUzdw/18e9b38e9f00388131efa272442ff21f/Social_Tiktok.svg?q=80" alt="" />

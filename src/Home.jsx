@@ -3,7 +3,6 @@ import Slider from './Slider'
 import gsap from 'gsap';
 import { motion,animate, easeInOut } from "framer-motion"
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import NewCreation from './NewCreation';
 import CabduryWorld from './CabduryWorld';
 import Footer from './Footer';
 import Navbar from './Navbar';

@@ -62,7 +62,7 @@ function MilkChoco() {
       <img className=' w-full h-full object-cover' src='https://i.pinimg.com/564x/de/97/a8/de97a8a67a138833ea26d1217aa7e15a.jpg'/>
       <div className='z-9 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-screen '>
       <h1 className='text-[#dbb667] text-[10vh] uppercase whitespace-nowrap text-center title'>cadbury milk <br/>chocolate</h1>
-      <p className='z-9 text-[4vh] py-8  text-center title '>Our classic, Cadbury milk chocolate recipe always goes down a treat - milk chocolate bars, biscuits and chocolate bites. Anyone fancy a chunk of Cadbury Dairy Milk?</p>
+      <p className='z-9 text-[4vh] py-8  text-white text-center title '>Our classNameic, Cadbury milk chocolate recipe always goes down a treat - milk chocolate bars, biscuits and chocolate bites. Anyone fancy a chunk of Cadbury Dairy Milk?</p>
       
       </div></div>
       <div className='w-screen flex justify-center py-10'>
@@ -96,25 +96,25 @@ function MilkChoco() {
              },].map((item, index) => (
           <div
             key={index}
-            className={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
+            className={`w-[22vw] h-[50vh] relative bg-purple-300 rounded-xl img-container overflow-hidden shadow-gray-400 shadow-xl${
               isHover[index] ? 'hovered' : ''
             }`}
             onMouseEnter={() => toggleHover(index)}
             onMouseLeave={() => toggleHover(index)}
             ref={(element) => (imgContainers.current[index] = element)}
           >
-            <div className='absolute w-[22vw] h-[15vw] img-round bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl '></div>
+            <div className='absolute w-[22vw] h-[25vh] img-round bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl '></div>
             <h5 className="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
             <img
               key={index}
-              className={`w-[18vw] h-[35vh] z-9 absolute  our-product-img  top-[30%]  left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+              className={`w-[60vw] z-9 absolute  our-product-img  top-[30%]  left-1/2 -translate-x-1/2 -translate-y-1/2 ${
                 isHover[index] ? 'hovered' : ''
               }`}
               ref={(elem) => (images.current[index] = elem)}
               src={item.image}
               alt="Milk Chocolate"
             />
-            <p className="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
+            <p className="text-[2vh] text-white absolute text-center bottom-[5%] px-2" >{item.para}</p>
           </div>
         ))}
       </div>

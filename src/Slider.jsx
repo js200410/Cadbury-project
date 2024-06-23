@@ -94,7 +94,7 @@ const Crunchie= () => {
 const Slider = () => {
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger)
-    gsap.from(".breakText",{
+    gsap.from(".breakTextParent",{
       y:"100%",
       stagger:0.5,
       opacity:0,
@@ -113,7 +113,7 @@ const Slider = () => {
       }
       
      })
-     gsap.to(".breakText",{
+     gsap.to(".breakTextParent",{
       y:"0",
       
       opacity:1,
@@ -191,15 +191,9 @@ const Slider = () => {
         <SwiperSlide>
         <div className="swiper-slide-div flex w-full h-full">
             <div className="home-img  w-[50%] bg-yellow-300 font-[900]  flex flex-col justify-center items-center">
-              <h1 className="text-purple-900 flex z-[1] text-[3vw] title breakTextParent">{"Share-The-Joy".split("").map((value,index)=>{
-                return <span className="breakText font-[700]" key={index}>{value}</span>
-              })}</h1>
-              <h1 className="text-purple-900 flex z-[1] text-[3vw] title breakTextParent">{"With-Family-and".split("").map((value,index)=>{
-                return <span className="breakText font-[700]" key={index}>{value}</span>
-              })} </h1>
-              <h1 className="text-purple-900 flex z-[1] text-[3vw] title breakTextParent">{"Friends-With-Easter-eggs".split("").map((value,index)=>{
-                return <span className="breakText font-[700]" key={index}>{value}</span>
-              })}</h1>
+              <h1 className="text-purple-900 flex z-[1] text-[3vw]  breakTextParent">Share The Joy</h1>
+              <h1 className="text-purple-900 flex z-[1] text-[3vw]  breakTextParent">With Family and </h1>
+              <h1 className="text-purple-900 flex z-[1] text-[3vw]  breakTextParent">Friends With Easter eggs</h1>
             </div>
             <div className="home-img-2 h-full w-[50%] bg-yellow-100 flex items-center justify-center">
               <EggImageTimer/>
@@ -209,17 +203,11 @@ const Slider = () => {
         <SwiperSlide >
           <div className="swiper-slide-div flex w-full h-full">
             <div className="home-img  w-[60%]   bg-yellow-900  font-[900]  flex flex-col justify-center items-center">
-              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] title">{"Bournville".split("").map((value,index)=>{
-                return <span className="breakText" key={index}>{value}</span>
-              })} </h1>
-              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] title">{" Dark-Chocolates".split("").map((value,index)=>{
-                return <span className="breakText" key={index}>{value}</span>
-              })} </h1>
-              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] title">{"The-King's-Coronation".split("").map((value,index)=>{
-                return <span className="breakText" key={index}>{value}</span>
-              })}</h1>
+              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] ">Bournville</h1>
+              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] "> Dark Chocolates</h1>
+              <h1 className="text-yellow-600 breakTextParent flex z-[1] text-[4vw] ">The King's Coronation</h1>
             </div>
-            <div className="home-img-2 h-full w-[50%] flex bg-[url('https://cdn.pixabay.com/photo/2022/03/03/15/40/coffee-7045578_1280.png')]  items-center justify-center">
+            <div className="home-img-2 h-full w-[50%] flex bg-[url('https://s3images.coroflot.com/user_files/individual_files/original_580156_6ucbrctarimzl7mdpd8bt55me.jpg')]  items-center justify-center">
               <Bourneville/>
             </div>
           </div>
@@ -227,9 +215,9 @@ const Slider = () => {
         <SwiperSlide>
           <div className="swiper-slide-div crunchiee flex w-full h-full">
             <div className="home-img  w-[50%] bg-purple-900 font-[900] capitalize flex flex-col justify-center items-center">
-              <h1 className="text-yellow-500 text-[3vw] title">savour it sollow</h1>
-              <h1 className="text-yellow-500 text-[3vw] title"> or share </h1>
-              <h1 className="text-yellow-500 text-[3vw] title">with someone you cherish</h1>
+              <h1 className="text-yellow-500 text-[3vw] breakTextParent">savour it sollow</h1>
+              <h1 className="text-yellow-500 text-[3vw] breakTextParent"> or share </h1>
+              <h1 className="text-yellow-500 text-[3vw] breakTextParent">with someone you cherish</h1>
             </div>
             <div className="home-img-2 h-full w-[50%] flex bg-[url('https://cdn.pixabay.com/photo/2021/03/28/11/51/honeycomb-6131087_1280.jpg')]  items-center justify-center">
               <Crunchie/>

@@ -98,25 +98,25 @@ function Chocolate() {
              },].map((item, index) => (
           <div
             key={index}
-            className={`w-[22vw] h-[60vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
+            className={`w-[22vw] h-[50vh] relative bg-purple-300 rounded-xl img-container shadow-gray-400 shadow-xl${
               isHover[index] ? 'hovered' : ''
             }`}
             onMouseEnter={() => toggleHover(index)}
             onMouseLeave={() => toggleHover(index)}
             ref={(element) => (imgContainers.current[index] = element)}
           >
-            <div className='absolute img-round w-[22vw] h-[15vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl '></div>
+            <div className='absolute img-round w-[22vw] h-[17vw] bg-[#4b0983] top-1/2 rounded-tl-[60%] rounded-b-xl '></div>
             <h5 className="absolute left-[5%] bg-[#ebc373] rounded-xl px-2 top-2 text-white ">{item.h4}</h5>
             <img
               key={index}
-              className={`w-[18vw] h-[35vh] z-9 our-product-img absolute top-[30%] left-1/2 -translate-x-1/2  ${
+              className={`w-[20vw] z-9 our-product-img absolute top-[30%] left-1/2 -translate-x-1/2  ${
                 isHover[index] ? 'hovered' : ''
               }`}
               ref={(elem) => (images.current[index] = elem)}
               src={item.image}
               alt="White Chocolate"
             />
-            <p className="text-[2vh] absolute bottom-[5%] px-2" >{item.para}</p>
+            <p className="text-[2vh] absolute text-white text-center bottom-[0%] px-2" >{item.para}</p>
           </div>
         ))}
       </div>

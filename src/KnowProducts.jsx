@@ -17,7 +17,7 @@ const KnowProducts = () => {
             <div className="cadbury-details w-[60vw] capitalize flex flex-col gap-[2vh] tracking-wider">
                 <h2>cadbury</h2>
                 <h1>Cadbury Dairy Milk</h1>
-                <p>To celebrate our 200th anniversary, we're bringing back some of the classic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
+                <p>To celebrate our 200th anniversary, we're bringing back some of the classNameic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
                <Link to="/OurProducts"> <button>Shop Now</button></Link>
             </div>
         </div>
@@ -25,7 +25,7 @@ const KnowProducts = () => {
             <div className="cadbury-details w-[60vw] capitalize flex flex-col gap-[2vh] tracking-wider">
                 <h2>cadbury</h2>
                 <h1>Cadbury Twirl</h1>
-                <p>To celebrate our 200th anniversary, we're bringing back some of the classic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
+                <p>To celebrate our 200th anniversary, we're bringing back some of the classNameic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
                 <Link to="/OurProducts"><button>Shop Now</button></Link>            </div>
             <div className="cadbury-img w-[90vw] p-10 h-[70vh] flex justify-center items-center rounded-bl-[6vw] rotate-12 rounded-tr-[8vw] bg-yellow-400">
                 <img data-scroll data-scroll-speed='.2' src="https://images.ctfassets.net/pmzhtobns06n/4hp5CMLltS0HXUy0cWmHY8/ffffd6b04f07bf796eb06a2b498ef50b/Mask_group-3.png?fm=webp&q=80" alt="" />
@@ -38,7 +38,7 @@ const KnowProducts = () => {
             <div className="cadbury-details w-[60vw] capitalize flex flex-col gap-[2vh] tracking-wider">
                 <h2>cadbury</h2>
                 <h1>Cadbury Wispa</h1>
-                <p>To celebrate our 200th anniversary, we're bringing back some of the classic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
+                <p>To celebrate our 200th anniversary, we're bringing back some of the classNameic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
                <Link to="/OurProducts"> <button>Shop Now</button></Link>
             </div>
         </div>
@@ -46,7 +46,7 @@ const KnowProducts = () => {
             <div className="cadbury-details capitalize w-[60vw] flex flex-col tracking-wider gap-[2vh]">
                 <h2>cadbury</h2>
                 <h1>Cadbury Crunchie</h1>
-                <p>To celebrate our 200th anniversary, we're bringing back some of the classic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
+                <p>To celebrate our 200th anniversary, we're bringing back some of the classNameic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
                 <Link to="/OurProducts"><button>Shop Now</button></Link>            </div>
             <div className="cadbury-img w-[90vw] p-10 h-[70vh] flex justify-center items-center rounded-bl-[6vw] rotate-12 rounded-tr-[8vw] bg-yellow-400">
                 <img data-scroll data-scroll-speed='.4' src="https://images-tastehub.mdlzapps.cloud/images/0d17d127-f1a2-4f5f-9747-5bada0d62713.png?fm=webp&q=80" alt="" />
@@ -54,13 +54,13 @@ const KnowProducts = () => {
         </div>
       
         <div data-scroll data-scroll-speed='.3' className="Product-cadbury flex justify-center  gap-[4vw]">
-            <div  className="cadbury-img w-[90vw] p-10 h-[70vh] flex justify-center items-center rounded-bl-[6vw] rotate-12 rounded-tr-[8vw] bg-red-700 ">
+            <div  className="cadbury-img w-[90vw] p-10 h-[70vh] flex justify-center items-center rounded-bl-[6vw] rotate-12 rounded-tr-[8vw] bg-[url('https://s3images.coroflot.com/user_files/individual_files/original_580156_6ucbrctarimzl7mdpd8bt55me.jpg')]">
                 <img data-scroll data-scroll-speed='.3' src="https://images.ctfassets.net/pmzhtobns06n/5DAShH8ObaXrtkxa8DGnIZ/335558b5df5881c761d632d407dadeae/Bournville_bottom.png?fm=webp&q=80" alt="" />
             </div>
             <div className="cadbury-details w-[60vw] capitalize flex flex-col gap-[2vh] tracking-wider">
                 <h2>cadbury</h2>
                 <h1>Cadbury Bournville</h1>
-                <p>To celebrate our 200th anniversary, we're bringing back some of the classic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
+                <p>To celebrate our 200th anniversary, we're bringing back some of the classNameic Cadbury Dairy Milk packs. Available in stores nationwide for a limited time only.</p>
                <Link to="/OurProducts"> <button>Shop Now</button></Link>
             </div>
         </div>
